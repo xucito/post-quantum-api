@@ -1,5 +1,4 @@
-﻿using PostQuantumLab.API.Authorization.Model;
-using PostQuantumLab.API.Data;
+﻿using PostQuantumLab.API.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -7,6 +6,7 @@ using Microsoft.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Text.RegularExpressions;
+using PostQuantum.API.Authorization;
 
 namespace PostQuantumLab.API.Authorization
 {

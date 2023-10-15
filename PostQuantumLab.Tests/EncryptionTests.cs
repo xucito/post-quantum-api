@@ -1,7 +1,8 @@
-﻿using PostQuantumLab.API.Authorization.Enums;
-using PostQuantumLab.API.Authorization.Model;
-using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
 using Org.BouncyCastle.Security;
+using PostQuantum.API.Authorization;
+using static IdentityModel.OidcConstants;
+using Xunit;
 
 namespace PostQuantumLab.Tests
 {
@@ -54,8 +55,6 @@ namespace PostQuantumLab.Tests
 
             var token = new JwtToken()
             {
-                alg = Algorithms.Dilithium3,
-                typ = "JWT",
                 sub = Guid.NewGuid().ToString()
             };
 
